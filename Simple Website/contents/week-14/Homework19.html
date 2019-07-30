@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Name: Zachary Moore
+      Date: 08/09/2018
+      Abstract: Homework 18
+    -->
+    <link rel="stylesheet" type="text/css" href="../../styles/Homework19.css">
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <form id="frmAreaCalculator">
+      <table>
+        <tr>
+          <td colspan="2">
+            <img id="imgTriangle" src="../../images/triangle.gif" alt="a triangle 
+              with lines labeled h and b for the height and base">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>
+              Enter the width and height of your<br>
+              triangle to calculate the area.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">
+            <label for="txtWidth" id="lblWidth">Width(b):</label>
+          </td>
+          <td class="input">
+            <input type="text" id="txtWidth" class="item">
+          </td>
+        </tr>
+        <tr>
+          <td class="label">
+            <label for="txtHeight" id="lblHeight">Height(h):</label>
+          </td>
+          <td class="input">
+            <input type="text" id="txtHeight">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="button" id="btnCalculate" value="Calculate area">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td class="label bold">
+            <label for="txtArea" id="lblArea">The area is:</label> 
+          </td>
+          <td class="input">
+            <input type="text" id="txtArea">
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script type="text/javascript" src="../../scripts/Homework19.js"></script>
+  </body>
+</html>

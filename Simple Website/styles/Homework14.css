@@ -1,0 +1,38 @@
+body{
+  background-color: black;
+  color: rgb(255, 165, 60);
+  font-family: arial, verdana, sans-serif; 
+}
+header{
+  font-size: .8em;
+}
+hr{
+  height: 2px;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 165, 0, 1), rgba(0, 0, 0, 0))
+}
+#divOne{
+  box-sizing: content-box;
+  width: 45%;
+  border-width: 1px;
+  border-color: orange;
+  border-style: solid;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+#divTwo{
+  box-sizing: border-box;
+  width: 45%;
+  border-width: 1px;
+  border-color: orange;
+  border-style: solid;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+code{
+  color: rgb(100, 100, 255);
+  font-size: 1.2em;
+  font-weight: normal;
+}

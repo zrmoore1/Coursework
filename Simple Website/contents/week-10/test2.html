@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+        Name: Zachary Moore
+        Assignment: Test 2
+        Due Date: 07/14/2018
+        -->
+      <title>Test 2</title>
+      <link rel="stylesheet" href="../../styles/Test2.css" type="text/css">
+    </head>
+    <body>
+      <img src="../../images/CSlogo.png" alt="Cincinnati State logo">
+      <form name="frmStudentRegistration" action="" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <table id="tblPersonalInformation">
+            <tr>
+              <td><label for="txtFirstName">First Name:</label></td>
+              <td><input type="text" id="txtFirstName"></td>
+            </tr>
+            <tr>
+              <td><label for="txtLastName">Last Name:</label></td>
+              <td><input type="text" id="txtLastName"></td>
+            </tr>
+            <tr>
+              <td><label for="txtSSN">Social Security Number:</label></td>
+              <td><input type="text" placeholder="###-##-####" id="txtSSN"></td>
+            </tr>
+            <tr>
+              <td><label for="dteDOB">Date of Birth:</label></td>
+              <td><input type="date" id="dteDOB"></td>
+            </tr>
+            <tr>
+              <td><label for="txtPhone">Home Phone:</label></td>
+              <td><input type="text" placeholder="(###) ###-####" id="txtPhone"></td>
+            </tr>
+            <tr>
+              <td><label for="txtEmail">Email Address:</label></td>
+              <td><input type="text" id="txtEmail"</td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Registration Information</legend>
+          <table id="tblRegistrationInformation">
+            <tr>
+              <td><label for="selYear">Start Year:</label></td>
+              <td>
+                <select id="selYear">
+                  <option select="selected" value="">Choose Year</option>
+                  <option value="2018">2020</option>
+                  <option value="2018">2019</option>
+                  <option value="2018">2018</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="selTerm">Start Term:</label></td>
+              <td>
+                <select id="selTerm">
+                  <option select="selected" value="">Choose Term</option>
+                  <option value="fall">Fall</option>
+                  <option value="spring">Spring</option>
+                  <option value="summer">Summer</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="radGradMonth">Graduation Month:</label></td>
+              <td>
+                <label for="november">
+                  <input type="radio" name="radGradMonth" id="november" value="november">
+                  November
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td />
+              <td>
+                <label for="june">
+                  <input type="radio" name="radGradMonth" id="june" value="june">
+                  June
+                </label>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Submit Your Registration</legend>
+            <table id="tblSubmit">
+              <tr>
+                <td colspan="2">
+                  <button type="submit">Submit</button>
+                  <button type="reset">Reset</button>
+                </td>
+              </tr>
+            </table>
+        </fieldset>
+      </form>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+/*
+Name: Zachary Moore 
+Assignment: Test 2 - CSS Sheet
+Date: 07/14/2017
+*/
+
+body{
+  background: #A8F89C;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 166px;
+  height: 54px;
+  margin-bottom: 7px;
+}
+fieldset{
+  width: 410px;
+  margin: auto;
+  border-color: gray;
+}
+legend{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(28,67,14);
+}
+table{
+  width: 400px;
+  table-layout: fixed;
+  border-spacing: 7px;
+}
+/* label column */
+tr td:first-child{
+  text-align: right;
+  font-weight: bold;
+  padding-right: 7px;
+}
+label{
+  font-size: 14px;
+  color: #06127D;
+}
+/* input column */
+tr td:nth-child(2){
+  padding-left: 7px;
+  text-align: left;
+}
+input, select{
+  width: 140px;
+}
+input[type=radio]{
+  width: auto;
+}
+label[for="november"], label[for="june"]{
+  color: black;
+}
+button{
+  width: 75px;
+  font-weight: bold;
+  background-color: rgb(28,67,14);
+  color: white;
+}
+#tblSubmit td{
+  text-align: center;
+}

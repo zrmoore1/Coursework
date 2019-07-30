@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Name: Zachary Moore
+      Assignment: Homework 11
+      Due Date: 06/16/2018
+    -->
+    <title>Homework 11</title>   
+  </head>
+  <body>
+    <header>
+      Name: Zachary Moore<br>
+      Assignment: Homework 11<br>
+      Due Date: 06/16/2018<br>
+      <hr>
+    </header>
+    <h1>Homework 11</h1>
+    <form name="frmHomework11">
+      <h3><u>Input Attributes</u></h3>
+        <dl>
+          <dt><b><i>form</i></b></dt>
+          <dd>
+            <i>Use:</i> Can be used to identify to which form on the page the input element belongs<br>
+            <i>Types:</i> Any<br>
+            <i>Example:</i> <code>&lt;input type="text" form="frmHomework11"&gt;</code><br>
+            <input type="text" form="frmHomework11">
+          </dd>
+          <dt><b><i>pattern</i></b></dt>
+          <dd>
+            <i>Use:</i> A regular expression that is used to validate formatted text<br>
+            <i>Types:</i> text, search, url, tel, email, and password<br>
+            <i>Example:</i> <code>&lt;input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="###-###-####"&gt;</code><br>
+            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="###-###-####">
+          </dd>
+          <dt><b><i>step</i></b></dt>
+          <dd>
+            <i>Use:</i> Can be used to set an increment or valid values for a numerical input.<br>
+            <i>Types:</i> number, range, date, datetime-local, month, time, and week<br>
+            <i>Example:</i> <code>&lt;input type="number" step="3"&gt;</code><br>
+            <input type="number" step="3">
+          </dd>
+        </dl>
+      <h3><u>Input Types</u></h3>
+        <dl>
+          <dt><b><i>month</i></b></dt>
+          <dd>
+            <i>Use:</i> Input for month and year<br>
+            <i>Example:</i> <code>&lt;input type="month" name="dteMonth" placeholder="month, year"&gt;</code><br>
+            <input type="month" name="dteMonth" placeholder="month, year">
+          </dd>
+          <dt><b><i>range</i></b></dt>
+          <dd>
+            <i>Use:</i> Allows user to input a number within an upper and lower bound<br>
+            <i>Example:</i> <code>&lt;input type="range" min="0" max="100"&gt;</code><br>
+            <input type="range" min="0" max="100">
+          </dd>
+          <dt><b><i>url</i></b></dt>
+          <dd>
+            <i>Use:</i> An input that expects a url. Expects full url, including https://<br>
+            <i>Example:</i> <code>&lt;input type="url" placeholder="website.com"&gt;</code><br>
+            <input type="url" placeholder="https://www.google.com">
+          </dd>
+        </dl>
+      <h3><u>Form Elements</u></h3>
+        <dl>
+          <dt><b><i>output</i></b></dt>
+          <dd>
+            <i>Use:</i> Displays the output of a javascript calculation<br>
+            <i>Example:</i> <code>&lt;output for="100 2"&gt;</code><br>
+          </dd>
+          <dt><b><i>datalist</i></b></dt>
+          <dd>
+            <i>Use:</i> Displays a list of possible options for an input element<br>
+            <i>Example:</i><br>
+              <code>
+                &lt;input list="animals"&gt;<br>
+                &lt;datalist id="animals"&gt;<br>
+                  &lt;option value="Aardvark"&gt;<br>
+                  &lt;option value="Anteater"&gt;<br>
+                  &lt;option value="Zebra"&gt;<br>
+                &lt;/datalist&gt;<br>
+              </code>
+            <input list="animals">
+            <datalist id="animals">
+              <option value="Aardvark">
+              <option value="Anteater">
+              <option value="Zebra">
+            </datalist>
+          </dd>
+        </dt>
+      <input type="submit" value="Test"><input type="reset">
+    </font>
+  </body>
+</html>

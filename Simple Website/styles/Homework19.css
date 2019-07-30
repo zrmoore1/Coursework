@@ -1,0 +1,45 @@
+/*
+  Name: Zachary Moore
+  Date: 08/11/2018
+  Abstract: Homework 19 CSS
+*/
+form{
+  width: 560px;
+  border: 2px solid red;
+  padding: 20px;
+}
+table{
+  width: 100%;
+  border: 1px solid blue;
+  text-align: center;
+  border-collapse: collapse;
+  padding-bottom: 20px;
+}
+td{
+  padding: 5px;
+}
+.label{
+  text-align: right;
+  width: 50%;
+}
+.bold{
+  font-weight: bold;
+}
+.input{
+  text-align: left;
+}
+p{
+  padding: 0px;
+  margin: 0px;
+}
+.input > input{
+  width: 5em;
+}
+#btnCalculate{
+  width: 10em;
+}
+hr{
+  background-color: blue;
+  height: 3px;
+  border: 0px;
+}

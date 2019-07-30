@@ -1,0 +1,135 @@
+/* ----------------------------------------------------------------------------
+  Tiny Screens 
+---------------------------------------------------------------------------- */
+body{
+  font-size: 110%;
+  background-color: hsl(60, 20%, 80%);
+}
+#grid{
+  border: 1px solid black;
+}
+aside{
+  display: none;
+}
+header{
+  display: block;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+main{
+  display: block;
+  border-top: none;
+  padding: 10px;
+  overflow: auto;
+}
+code{
+  background-color: #ccc;
+  font-size: 1.2em;
+  padding: 2px;
+}
+#css, #css code{
+  display: block;
+  border: 1px solid black;
+  background-color: #444;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  padding-left: 40px;
+}
+/* Example Grid Layout */
+#sampleGrid{
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "header"
+    "sidebar1"
+    "content"
+    "sidebar2"
+    "footer";
+}
+#sampleHeader{
+  grid-area: header;
+}
+#sampleLeftSidebar{
+  grid-area: sidebar1;
+}
+#sampleRightSidebar{
+  grid-area: sidebar2;
+  background-color: #ccc;
+  color: #444;
+}
+#sampleContent{
+  grid-area: content;
+}
+#sampleFooter{
+  grid-area: footer;
+}
+#sampleHeader, #sampleFooter{
+  background-color: #999;
+}
+.cell{
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+}
+/* ----------------------------------------------------------------------------
+  Small Screens 
+---------------------------------------------------------------------------- */
+@media only screen and (min-width: 600px){
+  #sampleGrid{
+  grid-template-columns: 20% 1fr;
+  grid-template-areas: 
+  "header header"
+  "sidebar1 content"
+  "sidebar2 sidebar2"
+  "footer footer";
+  }
+}
+/* ----------------------------------------------------------------------------
+  Medium to Large Screens 
+---------------------------------------------------------------------------- */
+@media only screen and (min-width: 768px){
+  body{
+    font-size: 100%;
+  }
+  #grid{
+    display: grid;
+    height: 95vh;
+    grid-template-columns: [aside] auto [main] 1fr;
+    grid-template-rows: max-content auto;
+    grid-template-areas:
+      "header header"
+      "aside main";
+  }
+  header{
+    grid-area: header;
+    padding: 10px;
+  }
+  aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    padding: 10px;
+    overflow: auto;
+  }
+  aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  main{
+    grid-area: main;
+    overflow: auto;
+    padding: 10px;
+  }
+  /* Example Grid Layout */
+  #sampleGrid{
+    grid-template-columns: 120px auto 120px;
+    grid-template-areas:
+      "header header header"
+      "sidebar1 content sidebar2"
+      "footer footer footer";
+  }
+}

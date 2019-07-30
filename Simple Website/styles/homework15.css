@@ -1,0 +1,95 @@
+table{
+  width: 150px;
+  height: 150px;
+}
+table, th, td{
+  border: 1px solid black;
+}
+/* Table 1*/
+#T1 td:nth-child(1){
+  /* first column */
+  text-align: left;
+}
+#T1 td:nth-child(2){
+  /* second column */
+  text-align: center;
+}
+#T1 td:nth-child(3){
+  /* third column */
+  text-align: right;
+}
+#T1 tr:nth-child(1){
+  /* first row */
+  vertical-align: top;
+}
+#T1 tr:nth-child(2){
+  /* second row */
+  vertical-align: middle;
+}
+#T1 tr:nth-child(3){
+  /* third row */
+  vertical-align: bottom;
+}
+#T1R1C1{
+  background-color: black;
+}
+#T1R1C2{
+  background-color: red;
+}
+#T1R1C3{
+  background-color: orange;
+}
+#T1R2C1{
+  background-color: yellow;
+}
+#T1R2C2{
+  background-color: green;
+}
+#T1R2C3{
+  background-color: blue;
+}
+#T1R3C1{
+  background-color: purple;
+}
+#T1R3C2{
+  background-color: violet;
+}
+#T1R3C3{
+  background-color: white;
+}
+/* Table 2 */
+[colspan="2"]{
+  width: 66%;
+}
+[colspan="1"]{
+  width: 33%;
+}
+/* Table 3 */ 
+/* Table 4 */
+#T4{
+  text-align: center;
+}
+/* Table 5 */
+#T5{
+  background-color: yellow;
+  width: 350px;
+  border-collapse: collapse;
+}
+#T5 td{
+  height: 75px;
+}
+/* Nested Table */
+#nT{
+  width: 100%;
+  background-color: beige;
+  border-collapse: collapse;
+}
+#nT td{
+  width: 50%;
+}
+#nTR1C1{
+  text-align: center;
+}
+#nTR1C2{
+  vertical-align: top;
+}

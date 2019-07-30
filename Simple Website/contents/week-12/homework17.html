@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      Name: Zachary Moore
+      Assignment: Homework 17
+      Due Date: 07/28/2018
+    -->
+    <title>Homework 17</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/homework12.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+  <body>
+    <div id="grid">
+      <header>
+        Name: Zachary Moore<br>
+        Assignment: Homework 17 - CSS Property Research<br>
+        Due Date: 07/28/2018<br>
+      </header>
+      <aside>
+        <div>
+        <h4>NAVIGATION</h4>
+        <ul>
+          <li><a href="http://itd1.cincinnatistate.edu/HTML400-Moore9083/">Index Page</a></li>
+          <li><a href="https://www.cincinnatistate.edu/">Cincinnati State Website</a></li>
+        </ul>
+        </div>
+      </aside>
+      <main>
+          <h1>Grid Layout</h2>
+          <p>
+            The CSS3 topic I'm invesigating is the Grid Layout. The Grid 
+            Layout is a tool that allows a developer to easily create a 
+            responsive layout that changes in according to screen size.
+          </p>
+          <p>
+            To create a grid, you simply have to set the 
+            <code>display</code> property to <code>grid</code> for the
+            parent container. <code>grid-template-columns</code> and 
+            <code>grid-template-rows</code> can be used to specify
+            the number and size of rows and columns. 
+            <code>grid-template-areas</code> can be used to layout
+            grid items specified with the <code>grid-area</code>
+            property.
+          </p>
+          <div id="sampleGrid">
+            <div id="sampleHeader" class="cell"><h3>Header</h3></div>
+            <div id="sampleLeftSidebar" class="cell"><h3>Left Sidebar</h3></div>
+            <div id="sampleRightSidebar" class="cell"><h3>Right Sidebar</h3></div>
+            <div id="sampleContent" class="cell">
+              <h3>Content</h3>
+              <p>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                 Phasellus scelerisque feugiat velit, ac vestibulum enim 
+                 tincidunt in. Praesent luctus magna tempor lorem porta, sed 
+                 maximus lacus finibus. Nunc sit amet varius eros. Aenean 
+                 tincidunt leo nisi, ut ornare elit lacinia quis. Nullam nisl 
+                 velit, mattis vel mollis ac, tincidunt et orci. Suspendisse 
+                 potenti. Aenean eget commodo odio. In efficitur dignissim 
+                 dolor, eget maximus metus semper ac. Pellentesque eleifend eu 
+                 metus sit amet ultrices. Maecenas rhoncus nibh sit amet metus 
+                 malesuada hendrerit. Etiam hendrerit porta magna, faucibus 
+                 sodales felis vehicula a. Donec et sodales odio, eu congue 
+                 ante. Pellentesque condimentum suscipit mi fringilla 
+                 venenatis. Fusce commodo sit amet ipsum ac convallis.
+              </p>
+              <p>
+                Pellentesque habitant morbi tristique senectus et netus et 
+                malesuada fames ac turpis egestas. Pellentesque dictum cursus 
+                diam, eu porttitor tortor venenatis nec. Aenean ex sem, 
+                iaculis id nibh sed, cursus semper diam. Praesent velit ex, 
+                maximus sed finibus in, maximus non lacus. Maecenas hendrerit 
+                hendrerit enim, a egestas diam ultrices quis. Praesent 
+                convallis urna id tortor egestas, a mollis risus iaculis. 
+                Aenean eu neque convallis, finibus metus nec, tincidunt nisi. 
+                Nulla sit amet auctor neque. Fusce vehicula, quam non finibus 
+                volutpat, lacus tellus mattis metus, id congue justo erat 
+                odales massa. Maecenas id velit nec turpis pharetra lacinia a 
+                at lectus. Vivamus vel tincidunt ligula. Maecenas sodales 
+                consequat dui, eu semper ex pellentesque quis. Vivamus quis 
+                viverra est. Sed rutrum laoreet vulputate.
+              </p>
+            </div>
+            <div id="sampleFooter" class="cell"><h3>Footer</h3></div>
+          </div>
+          <section id="html">
+            <code>
+            </code>
+          </section>
+          <section id="css">
+            <h3>CSS Code</h3>
+          <pre>
+            <code>
+/* Base Settings + Mobile */
+#sampleGrid{
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "header"
+    "sidebar1"
+    "content"
+    "sidebar2"
+    "footer";
+}
+#sampleHeader{
+  grid-area: header;
+}
+#sampleLeftSidebar{
+  grid-area: sidebar1;
+}
+#sampleRightSidebar{
+  grid-area: sidebar2;
+  background-color: #ccc;
+  color: #444;
+}
+#sampleContent{
+  grid-area: content;
+}
+#sampleFooter{
+  grid-area: footer;
+}
+#sampleHeader, #sampleFooter{
+  background-color: #999;
+}
+.cell{
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Small Screens */
+@media only screen and (min-width: 600px){
+  #sampleGrid{
+  grid-template-columns: 20% 1fr;
+  grid-template-areas: 
+  "header header"
+  "sidebar1 content"
+  "sidebar2 sidebar2"
+  "footer footer";
+  }
+}
+
+/* Medium to Large Screens */
+@media only screen and (min-width: 768px){
+  #sampleGrid{
+    grid-template-columns: 120px auto 120px;
+    grid-template-areas:
+      "header header header"
+      "sidebar1 content sidebar2"
+      "footer footer footer";
+  }
+}
+            </code>
+            </pre>
+          </section>
+          <section class="references">
+            <h2>Reference Websites</h2>
+            <ul>
+              <li>
+                <a href="https://gridbyexample.com/">Grid by Example</a> 
+                - everything you could ever want to know about the CSS Grid Layout
+              </li>
+          </section>
+      </main>
+    </div>
+  </body>
+</html>

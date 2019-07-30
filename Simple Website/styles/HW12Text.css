@@ -1,0 +1,44 @@
+﻿body {
+  color: #102536;
+  font-family: Tahoma, "Lucinda Grande", Arial, sans-serif;
+  font-size: 62.5%;
+}
+h2 {
+  font-size: 1.5em;
+  color: #993;
+	margin-bottom: 5px;
+}
+p {
+  font-size: 1.2em;
+  text-indent: 2em;
+	margin-top: 0;
+	margin-bottom: 5px;
+  line-height: 150%;
+}
+#content ul{
+  font-size: 1.2em;
+  list-style-type: square;
+}
+#content li{
+  margin-bottom: 5px;
+}
+#mainNav ul {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+#mainNav li {
+	margin-bottom: 10px;
+}
+.byline {
+  color: #73afb7;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  text-indent: 0;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    Name: Zachary Moore
+    Assignment: Homework 14
+    Due Date: 06/30/2018
+    -->
+    <link href="../../styles/Homework14.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+    Name: Zachary Moore<br>
+    Assignment: Homework 14<br>
+    Due Date: 06/30/2018<br>
+    <hr>
+    </header>
+    <div id="divOne">
+      <p>
+        When the <code>box-sizing</code> property is set to
+        <code>content-box</code>, the browser calculates the <code>width</code>
+        without considering the values of the <code>padding</code> and 
+        <code>border-width</code> properties. The <code>width</code> is really
+        the width of the content within the box. 
+      </p>
+      <p>
+        <b>Total width = <code>width</code> + <code>padding</code> + <code>border width</code></b><br>
+        <b>Content width = <code>width</code></b>
+      </p>
+    </div>
+    <!-- No block-level elements in this space -->
+    If all properties are set to the same values, a <code>content-box</code> will be larger than<br>
+    a <code>border-box</code>. 
+    <div id="divTwo">
+      <p>
+        When <code>box-sizing</code> is set to <code>border-box</code>, the 
+        <code>width</code> property does include both the <code>padding</code>
+        and <code>border-width</code> values. The <code>width</code> is the
+        total width of the box, from the edges of the <code>border</code>.
+      </p>
+      <p>
+        <b>Total width = <code>width</code></b><br>
+        <b>Content width = <code>width</code> &minus; <code>border-width</code> &minus; <code>padding</code></b>
+      </p>
+    </div>
+  </body>
+</html>

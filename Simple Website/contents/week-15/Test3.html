@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Name: Zachary Moore
+      Due Date: 08/18/2018
+      Abstract: Test 3
+    -->
+    <title>Test 3</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/Test3.css">
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <form id="frmSimpleCalculator">
+      <table>
+        <tr>
+          <td colspan="2" class="header">
+            <h1>Simple Calculator</h1>
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <label for="txtValue1" id="lblValue1">Value 1:</label>
+          </td>
+          <td class="right">
+            <input type="text" id="txtValue1">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="control">
+            <select id="selOperation">
+              <option value="add">+</option>
+              <option value="subtract">-</option>
+              <option value="multiply">*</option>
+              <option value="divide">/</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <label for="txtValue2" id="lblValue2">Value 2:</label>
+          </td>
+          <td class="right">
+            <input type="text" id="txtValue2">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <label for="txtTotal" id="lblTotal">Total:</label>
+          </td>
+          <td class="right">
+            <input type="text" id="txtTotal">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="control">
+            <button type="button" id="btnCalculateTotal">Calculate Total</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="control"><button type="reset" id="btnClear">Clear</button></td>
+        </tr>
+      </table>
+    </form>
+    <script type="text/javascript" src="../../scripts/Test3.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+body{
+  background-color: beige;
+}
+header{
+  font-size: 0.9em;
+  }
+h1{
+  font-size: 1.8em;
+  text-decoration: underline;
+}
+p{
+  color: blue;
+  font-style: italic;
+  line-height: .8em;
+}
+li code{
+  font-size: 1.3em;
+  color: black;
+  font-weight: lighter;
+  background-color: #f2f2f2;
+  font-style: normal;
+  border: 1px solid black;
+}

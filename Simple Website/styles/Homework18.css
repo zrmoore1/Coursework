@@ -1,0 +1,20 @@
+/*
+  Name: Zachary Moore
+  Date: 8/4/2018
+  Abstract: CSS for Homework 18
+*/
+form{
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  background-color: hsl(240, 50%, 90%);
+}
+input{
+  margin-bottom: 10px;
+}
+#btnSubmit{
+  padding: 5px;
+  border: 1px solid black;
+  margin-top: 10px;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Name: Zachary Moore
+      Assignment: Homework 10 - More Forms
+      Due Date: 06/14/2018
+    -->
+    <title>Homework 10</title>   
+  </head>
+  <body style="margin-left: 50px">
+    <header>
+      Name: Zachary Moore<br>
+      Class: IT 110-400 HTML CSS & Javascript<br>
+      Abstract: Homework #10 - More Forms<br>
+    </header>
+    <h1>Homework 10</h1>
+    
+    <h3>1) - Contact Us Form</h3>
+    <form name="frmContactUs" method="get" action="">
+      <table border="1">
+        <tbody>
+          <tr>
+            <td colspan="2"><big>Send us an email</big></td>
+          </tr>
+          <tr>
+            <td><label for="cmbSubject">Subject:*</label></td>
+            <td>
+              <select required>
+                <option selected="selected" value="question">General Question</option>
+                <option value="followup">Order Followup</option>
+                <option value="sales">Sales</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="txtName">Your Name:*</label></td>
+            <td><input type="text" name="txtName" required></td>
+          </tr>
+          <tr>
+            <td><label for="txtTitle">Title:</label></td>
+            <td><input type="text" name="txtTitle"></td>
+          </tr>
+          <tr>
+            <td><label for="txtCompany">Company:</label></td>
+            <td><input type="text" name="txtCompany"></td>
+          </tr>
+          <tr>
+            <td><label for="txtPhone">Phone Number:</label></td>
+            <td><input type="text" name="txtPhone"></td>
+          </tr>
+          <tr>
+            <td><label for="txtEmail">Email Address:*</label></td>
+            <td><input type="text" name="txtEmail" required></td>
+          </tr>
+          <tr>
+            <td colspan="2"><label for="txtMessage">Message:*</td>
+          </tr>
+          <tr>
+            <td colspan="2"><textarea name="txtMessage" rows="4" cols="50" maxlength="80" required></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="right"><small>* Required Field</small></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="Submit" name="btnSubmit" style="width: 100px">
+              <input type="reset" value="Clear" name="btnClear" style="width: 100px">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    
+    <h3>2) - Checkboxes, radio buttons, combobox and listbox</h3>
+    <form name="frmMiscellaneous" method="get" action="">
+      <table border="1">
+        <tbody>
+          <tr>
+            <td colspan="2"><big>Miscellaneous</big></td>
+          </tr>
+          <tr>
+            <td><label for="chkToppings">Toppings:</label></td>
+            <td>
+              <input type="checkbox" name="chkToppings" value="caramel">Caramel</input><br>
+              <input type="checkbox" name="chkToppings" value="hotfudge">Hot Fudge</input><br>
+              <input type="checkbox" name="chkToppings" value="sprinkles">Sprinkles</input>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td><label for="radFlavor">Flavor:*</label></td>
+            <td>
+              <input type="radio" name="radFlavor" value="chocolate" required checked>Chocolate</input><br>
+              <input type="radio" name="radFlavor" value="strawberry" required>Strawberry</input><br>
+              <input type="radio" name="radFlavor" value="vanilla" required>Vanilla</input>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td><label for="cmbColor1">Color 1:*</label></td>
+            <td>
+              <select name="cmbColor1" required>
+                <option selected value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td><label for="cmbColor2">Color 2:*</label></td>
+            <td>
+              <select required name="cmbColor2" size="6">
+                <optgroup label="Primary Colors">
+                  <option selected value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                </optgroup>
+                <optgroup label="Secondary Colors">
+                  <option value="yellow">Yellow</option>
+                  <option value="magenta">Magenta</option>
+                  <option value="cyan">Cyan</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td><label for="selColor">Color 3:*</label></td>
+            <td><input type="color" required value="#FFFFFF"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="right"><small>* Required Field</small></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="Submit" name="btnSubmit">
+              <input type="reset" value="Clear" name="btnClear">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    
+    <h3>3) - Tricky Form Fields</h3>
+    <form name="frmTricky" method="get" action="">
+      <table border="1">
+        <tbody>
+          <tr>
+            <td colspan="2"><big>Tricky Form Fields</big></td>
+          </tr>
+          <tr>
+            <td><label for="txtFirstName">First Name:*</label></td>
+            <td><input type="text" name="txtFirstName" required></td>
+          </tr>
+          <tr>
+            <td><label for="txtLastName">Last Name:*</label></td>
+            <td><input type="text" name="txtLastName" required></td>
+          </tr>
+          <tr>
+            <td><label for="txtEmail">Email Address:*</label></td>
+            <td><input type="text" name="txtEmail" required></td>
+          </tr>
+          <tr>
+            <td><label for="txtConfirmEmail">Confirm Email Address:*</label></td>
+            <td><input type="text" name="txtConfirmEmail" required></td>
+          </tr>
+          <tr>
+            <td><label for="dteDateOfBirth">Date of Birth:*</label></td>
+            <td><input type="date" name="dteDateOfBirth" required></td>
+          </tr>
+          <tr>
+            <td><label for="txtSocialSecurityNumber">Social Security Number:*</label></td>
+            <td><input type="text" name="txtSocialSecurityNumber" required placeholder="###-##-####"></td>
+          </tr>
+          <tr>
+            <td><label for="txtSalary">Salarly:</label></td>
+            <td><input type="text" name="txtSalary" placeholder="$#,###.##"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="Submit" name="btnSubmit">
+              <input type="reset" value="Clear" name="btnClear">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

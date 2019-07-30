@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    Name: Zachary Moore
+    Assignment: Homework 15
+    Due Date: 07/07/2018
+    -->
+    <title>Homework 15</title>  
+    <link href="../../styles/homework15.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      Name: Zachary Moore<br>
+      Class: IT-110 400<br>
+      Abstract: Homework #15 - CSS for tables<br>
+    </header>
+    <h1>Homework 15</h1>
+    <h3>1) - Border, height, width, bgcolor, align and valign attributes</h3>
+    <table id="T1">
+      <tr>
+        <td id="T1R1C1">1</td> <!-- T1R1C1 = Table 1 Row 1 Column 1-->
+        <td id="T1R1C2">2</td>
+        <td id="T1R1C3">3</td>
+      </tr>
+      <tr>
+        <td id="T1R2C1">4</td>
+        <td id="T1R2C2">5</td>
+        <td id="T1R2C3">6</td>
+      </tr>
+      <tr>
+        <td id="T1R3C1">7</td>
+        <td id="T1R3C2">8</td>
+        <td id="T1R3C3">9</td>
+      </tr>
+    </table>
+    <h3>2) - Colspan and percentage width (e.g. 50%)</h3>
+    <table>
+      <tr>
+        <td colspan="3">1</td>
+      </tr>
+      <tr>
+        <td colspan="2">2</td>
+        <td colspan="1">3</td>
+      </tr>
+      <tr>
+        <td colspan="1">4</td>
+        <td colspan="2">5</td>
+      </tr>
+    </table>
+    <h3>3) - Rowspan</h3>
+    <table>
+      <tr>
+        <td rowspan="1">1</td>
+        <td rowspan="2">4</td>
+        <td rowspan="3">6</td>
+      </tr>
+      <tr>
+        <td rowspan="1">2</td>
+      </tr>
+      <tr>
+        <td rowspan="1">3</td>
+        <td rowspan="1">5</td>
+      </tr>
+    </table>
+    <h3>4) - Colspan & Rowspan</h3>
+    <table id="T4">
+      <tr>
+        <td colspan="2" rowspan="1">1</td>
+        <td colspan="1" rowspan="2">2</td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="2">4</td>
+        <td colspan="1" rowspan="1">5</td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="1">3</td>
+      </tr>
+    </table>
+    <h3>5) - Nested Table</h3>
+    <table id="T5">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <table id="nT">
+            <tr>
+              <td id="nTR1C1">A<br> nested<br> table<br></td>
+              <td id="nTR1C2">With this text at the top</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
