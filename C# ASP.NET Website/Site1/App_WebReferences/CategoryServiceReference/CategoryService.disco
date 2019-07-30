@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://itd1.cincinnatistate.edu/C2-SutterStewartR/CategoryService.asmx?wsdl" docRef="http://itd1.cincinnatistate.edu/C2-SutterStewartR/CategoryService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://itd1.cincinnatistate.edu/C2-SutterStewartR/CategoryService.asmx" xmlns:q1="http://C2-SutterStewartR/Categories" binding="q1:Categories_x005F_x0020_and_x005F_x0020_ProductsSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://itd1.cincinnatistate.edu/C2-SutterStewartR/CategoryService.asmx" xmlns:q2="http://C2-SutterStewartR/Categories" binding="q2:Categories_x005F_x0020_and_x005F_x0020_ProductsSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

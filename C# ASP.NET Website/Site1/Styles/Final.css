@@ -1,0 +1,21 @@
+﻿/*
+    Name: Zachary Moore
+    Class: CPDM 152-400
+    Date: 4/27/2019
+*/
+.contentWrapper {
+    background-color:hsla( 0, 0%, 100%, 0.8);
+    margin: 10px;
+    padding: 20px;
+    width: 600px;
+    border: 1px solid black;
+}
+table {
+    margin: 5px;
+}
+table label {
+    font-weight: bold;
+}
+.error {
+    color: red;
+}

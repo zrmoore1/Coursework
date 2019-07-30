@@ -1,0 +1,29 @@
+﻿/*
+    Name: Zachary Moore
+    Class: CPDM 152-400
+    Date: 3/8/2019
+    Abstract: Styles the Product CRUD page. 
+*/
+table.gridview {
+    background-color: hsl(0, 0%, 80%);
+}
+    .gridview caption{
+        font-weight: bold;
+    }
+    .gridview td, th {
+        text-align: center;
+        padding: 2px;
+    }
+    /* Give the table stripes. */
+    .gridview tr:nth-child(even) {
+        background-color: hsl(0,0%,95%);
+    }
+table.formview {
+    background-color: hsl(0, 0%, 80%);
+    border: 1px solid black;
+    padding: 10px;
+}
+    .formview th {
+        text-align: left;
+        text-decoration: underline;
+    }

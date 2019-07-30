@@ -1,0 +1,16 @@
+﻿/*
+    Name: Zachary Moore
+    Class: CPDM 152-400
+    Date: 2/14/2019
+    Abstract: Styles the gridview in homework8
+ */
+table.gridview-territories {
+    width: 400px;
+    background-color: hsl(0, 0%, 80%);
+}
+    .gridview-territories caption{
+        font-weight: bold;
+    }
+.gridview-territories tr:nth-child(even) {
+    background-color: hsl(0,0%,95%);
+}

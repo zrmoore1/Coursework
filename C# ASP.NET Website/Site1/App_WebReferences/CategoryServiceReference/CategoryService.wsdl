@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://C2-SutterStewartR/Categories" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://C2-SutterStewartR/Categories" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://C2-SutterStewartR/Categories">
+      <s:element name="GetCategories">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCategoriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCategoriesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProducts">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProductsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCategoriesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCategories" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoriesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProducts" />
+  </wsdl:message>
+  <wsdl:message name="GetProductsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoriesHttpGetIn" />
+  <wsdl:message name="GetCategoriesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetProductsHttpGetIn" />
+  <wsdl:message name="GetProductsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoriesHttpPostIn" />
+  <wsdl:message name="GetCategoriesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetProductsHttpPostIn" />
+  <wsdl:message name="GetProductsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="Categories_x0020_and_x0020_ProductsSoap">
+    <wsdl:operation name="GetCategories">
+      <wsdl:input message="tns:GetCategoriesSoapIn" />
+      <wsdl:output message="tns:GetCategoriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProducts">
+      <wsdl:input message="tns:GetProductsSoapIn" />
+      <wsdl:output message="tns:GetProductsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Categories_x0020_and_x0020_ProductsHttpGet">
+    <wsdl:operation name="GetCategories">
+      <wsdl:input message="tns:GetCategoriesHttpGetIn" />
+      <wsdl:output message="tns:GetCategoriesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProducts">
+      <wsdl:input message="tns:GetProductsHttpGetIn" />
+      <wsdl:output message="tns:GetProductsHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Categories_x0020_and_x0020_ProductsHttpPost">
+    <wsdl:operation name="GetCategories">
+      <wsdl:input message="tns:GetCategoriesHttpPostIn" />
+      <wsdl:output message="tns:GetCategoriesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProducts">
+      <wsdl:input message="tns:GetProductsHttpPostIn" />
+      <wsdl:output message="tns:GetProductsHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Categories_x0020_and_x0020_ProductsSoap" type="tns:Categories_x0020_and_x0020_ProductsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCategories">
+      <soap:operation soapAction="http://C2-SutterStewartR/Categories/GetCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProducts">
+      <soap:operation soapAction="http://C2-SutterStewartR/Categories/GetProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Categories_x0020_and_x0020_ProductsSoap12" type="tns:Categories_x0020_and_x0020_ProductsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCategories">
+      <soap12:operation soapAction="http://C2-SutterStewartR/Categories/GetCategories" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProducts">
+      <soap12:operation soapAction="http://C2-SutterStewartR/Categories/GetProducts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Categories_x0020_and_x0020_ProductsHttpGet" type="tns:Categories_x0020_and_x0020_ProductsHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetCategories">
+      <http:operation location="/GetCategories" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProducts">
+      <http:operation location="/GetProducts" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Categories_x0020_and_x0020_ProductsHttpPost" type="tns:Categories_x0020_and_x0020_ProductsHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetCategories">
+      <http:operation location="/GetCategories" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProducts">
+      <http:operation location="/GetProducts" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Categories_x0020_and_x0020_Products">
+    <wsdl:port name="Categories_x0020_and_x0020_ProductsSoap" binding="tns:Categories_x0020_and_x0020_ProductsSoap">
+      <soap:address location="http://itd1.cincinnatistate.edu/C2-SutterStewartR/CategoryService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Categories_x0020_and_x0020_ProductsSoap12" binding="tns:Categories_x0020_and_x0020_ProductsSoap12">
+      <soap12:address location="http://itd1.cincinnatistate.edu/C2-SutterStewartR/CategoryService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Categories_x0020_and_x0020_ProductsHttpGet" binding="tns:Categories_x0020_and_x0020_ProductsHttpGet">
+      <http:address location="http://itd1.cincinnatistate.edu/C2-SutterStewartR/CategoryService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Categories_x0020_and_x0020_ProductsHttpPost" binding="tns:Categories_x0020_and_x0020_ProductsHttpPost">
+      <http:address location="http://itd1.cincinnatistate.edu/C2-SutterStewartR/CategoryService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

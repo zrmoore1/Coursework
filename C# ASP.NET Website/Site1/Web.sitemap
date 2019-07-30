@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~" title="Home" description="Home">
+    <siteMapNode url="~/Default.aspx" title="Home" description="Go to the homepage" />
+    <siteMapNode url="~/Homework/week1" title="Week 1"  description="Week 1 Homework">
+      <siteMapNode url="~/Homework/week1/homework2.aspx" title="Homework 2" description="Homework 2"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week2" title="Week 2"  description="Week 2 Homework">
+      <siteMapNode url="~/Homework/week2/homework3.aspx" title="Homework 3" description="Homework 3"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week3" title="Week 3"  description="Week 3 Homework">
+      <siteMapNode url="~/Homework/week3/homework4.aspx" title="Homework 4" description="Homework 4"></siteMapNode>
+      <siteMapNode url="~/Homework/week3/homework5.aspx" title="Homework 5" description="Homework 5"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week4" title="Week 4"  description="Week 4 Homework">
+      <siteMapNode url="~/Homework/week4/homework6.aspx" title="Homework 6" description="Homework 6"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week5" title="Week 5"  description="Week 5 Homework">
+      <siteMapNode url="~/Homework/week5/homework7.aspx" title="Homework 7" description="Homework 7"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week6" title="Week 6"  description="Week 6 Homework">
+      <siteMapNode url="~/Homework/week6/homework8.aspx" title="Homework 8" description="Homework 8"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week7" title="Week 7"  description="Week 7 Homework">
+      <siteMapNode url="~/Homework/week7/MidTerm.aspx" title="Midterm" description="Midterm"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week8" title="Week 8"  description="Week 8 Homework">
+      <siteMapNode url="~/Homework/week8/homework9.aspx" title="Homework 9" description="Homework 9"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week9" title="Week 9"  description="Week 9 Homework">
+      <siteMapNode url="~/Homework/week9/homework10.aspx" title="Homework 10" description="Homework 10"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week10" title="Week 10"  description="Week 10 Homework">
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week11" title="Week 11"  description="Week 11 Homework">
+      <siteMapNode url="~/Homework/week11/homework12.aspx" title="Homework 12" description="Homework 12"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/week12" title="Week 12"  description="Week 12 Homework">
+      <siteMapNode url="~/Homework/week12/homework13.aspx" title="Homework 13" description="Homework 13"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Homework/Final Exam" title="Final Exam"  description="Final Exam">
+      <siteMapNode url="~/Homework/Final Exam/Final.aspx" title="Final" description="Final"></siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
+
+<!--
+Simplified Map:
+  Home
+  ..Week1
+  ....homework2.aspx
+  ..Week2
+  ....homework3.aspx
+  ..Week3
+  ....homework4.aspx
+  ....homework5.aspx
+  ..Week4
+  ..Week5
+  ..Week6
+  ..Week7
+  ..Week8
+  ..Week9
+  ..Week10
+  ..Week11
+  ..Week12
+  ..Week13
+  ..Week14
+-->

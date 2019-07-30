@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="C2_MooreZ" Class="ContactsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=itd2.cincinnatistate.edu;Initial Catalog=C2_MooreZ;User ID=C2_zMoore" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="C2_MooreZConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="db_owner.TContacts" Member="TContacts">
+    <Type Name="TContact">
+      <Column Name="intContactID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="strFirstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="strLastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="strEmailAddress" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="strPhoneNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="blnActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+    <InsertFunction FunctionId="FunctionId1">
+      <Argument Parameter="strFirstName" Member="strFirstName" />
+      <Argument Parameter="strLastName" Member="strLastName" />
+      <Argument Parameter="strEmailAddress" Member="strEmailAddress" />
+      <Argument Parameter="strPhoneNumber" Member="strPhoneNumber" />
+      <Argument Parameter="blnActive" Member="blnActive" />
+    </InsertFunction>
+  </Table>
+  <Function Id="FunctionId1" Name="db_owner.uspAddContact" Method="uspAddContact">
+    <Parameter Name="strFirstName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="strLastName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="strEmailAddress" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="strPhoneNumber" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="blnActive" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="uspAddContactResult">
+      <Column Name="intContactID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

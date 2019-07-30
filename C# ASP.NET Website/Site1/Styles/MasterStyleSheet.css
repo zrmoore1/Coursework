@@ -1,0 +1,73 @@
+﻿/*
+    Name: Zachary Moore
+    Class: CPDM 152-400
+    Date: 1/13/2019
+*/
+
+body {
+    margin: 0px;
+    background-image: url("../Images/tree_wallpaper.jpg");
+}
+.PageWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+header {
+    font-weight: bold;
+    font-size: 2em;
+    background-color: hsla(120, 100%, 20%, 0.9);
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid black;
+}
+.sidebar {
+    position: absolute;
+}
+    .sidebar a {
+        background-color: hsla( 0, 0%, 100%, 0.8) ;
+    }
+    .sidebar a:hover {
+        background-color: hsl(120, 90%, 25%); 
+    }
+nav ul {
+    border-right: 1px solid black;
+}
+nav li {
+    text-align: center;
+}
+    
+    li > a {
+        color: black;
+        margin: 0px;
+        width: 90px;
+        padding: .2em;
+        border-bottom: 1px solid black;
+    }
+    li > a:hover {
+        color: white;
+        font-weight: bold;
+    }
+.content {
+    padding: 10px;
+    position: relative;
+    left: 100px;
+    top: 0px;
+    width: 900px;
+    margin: 0px;
+}
+section > img {
+    float: left;
+    margin-right: 10px;
+}
+.content > section {
+    border: 1px solid black;
+    overflow: auto;
+    padding: 20px 10px;
+    margin: 0px;
+    background-color: hsla( 0, 0%, 100%, 0.8) ;
+    
+}
+section > h1 {
+    text-decoration: underline;
+}

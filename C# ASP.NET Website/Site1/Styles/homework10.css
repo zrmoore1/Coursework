@@ -1,0 +1,15 @@
+﻿/*
+    Name: Zachary Moore
+    Class: CPDM 152-400
+    Date: 3/10/2019
+    Abstract: Styles the display for the CD filebuilder
+    */
+.container {
+    border: 1px solid black;
+    width: 400px;
+    padding: 20px;
+    background-color: hsla( 0, 0%, 100%, 0.8);
+    }
+.error {
+    color: red;
+}
